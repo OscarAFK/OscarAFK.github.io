@@ -26,16 +26,16 @@
 		  <div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" href="accueil.html#A propos">A propos<span class="sr-only">(current)</span></a>
+				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos">A propos<span class="sr-only">(current)</span></a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="accueil.html#Jeux">Jeux</a>
+				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux">Jeux</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="accueil.html#Projets divers">Projets divers</a>
+				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers">Projets divers</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="accueil.html#Contact">Contact</a>
+				<a class="nav-link" data-key="contact" href="#Contact">Contact</a>
 			  </li>
 			</ul>
 		  </div>
@@ -43,7 +43,7 @@
 	</nav>
 	
 	<div id="Titre du jeu" class="container-fluid text-light pt-5">
-		<h1 class="display-1 text-center">Projet en laboratoire</h1>
+		<h1 class="display-1 text-center" data-key="projet-lab-titre">Projet en laboratoire</h1>
 	</div>
 	
 	<!-- Description --->
@@ -56,60 +56,60 @@
 
 				<div class="col-12 col-md-4 text-center">
 					<img src="https://media.ouest-france.fr/v1/pictures/MjAxOTA2N2NhMmRkMmU3NWZkMDhjODQwMmVjNzc5YWExM2FiYjA?width=480&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=794debc353c9c62745064409aae04a144f45c1b63d2cca294aa9f4909840ff85" class="mb-1 img-fluid" alt="Le CERV">
-					<p class="text-center fst-italic fw-lighter">Le CERV</p>
+					<p class="text-center fst-italic fw-lighter" data-key="projet-lab-img1-desc">Le CERV</p>
 				</div>
 				<div class="col-12 col-md-8 mb-5 text-start">
-					<p><strong>Ce projet en laboratoire</strong> a été réalisé en partenariat avec l'Ecole Nationale d'Ingénieurs de Brest au Centre Européen de la Réalité Virtuelle.
+					<p data-key="projet-lab-presentation-p1"><strong>Ce projet en laboratoire</strong> a été réalisé en partenariat avec l'Ecole Nationale d'Ingénieurs de Brest au Centre Européen de la Réalité Virtuelle.
 						Encadré par deux enseignants-chercheurs, le sujet était: "utilisation d'un dispositif mobile de captation de mouvements et la manipulation d'un bras à retour 
 						d'efforts.". Cela s'est déroulé sur 4 mois entre septembre et décembre 2020.</p>
-					<p>Suite au confinement durant cette période, les objectifs ont évolué. Le projet final a consisté à mettre en œuvre des algorithmes de reconnaissance 
+					<p data-key="projet-lab-presentation-p2">Suite au confinement durant cette période, les objectifs ont évolué. Le projet final a consisté à mettre en œuvre des algorithmes de reconnaissance 
 						de gestes et d'analyse d'activités à partir de données de squelette 3D et de les intégrer dans un environnement de réalité virtuelle sous Unity.</p>
-					<p>Pour mener à bien cette mission, moi et mon binôme avons dû nous appuyer sur des articles scientifiques et comparer différents algorithmes et configuration.
+					<p data-key="projet-lab-presentation-p3">Pour mener à bien cette mission, moi et mon binôme avons dû nous appuyer sur des articles scientifiques et comparer différents algorithmes et configuration.
 						Cela nous a permis d'aborder de nombreux domaines, d'utiliser des technologies pour la première fois, et tout cela grace à la confiance que nous ont accordé nos
 						encadrant; <a href="https://www.enib.fr/~nedelec/">A. Nedelec</a> et <a href="https://www.enib.fr/~querrec/">R. Querrec</a></p>
 				</div>
 				
 				
 				<div class="col-12 mb-5 text-center">
-					<a class="btn btn-danger btn-lg" href="https://github.com/maeldonn/motion-capture"><i class="fab fa-github"></i> Voir sur github</a>
-					<a class="btn btn-danger btn-lg" href="https://maeldonn.github.io/motion-capture/articles/gettingstarted.html"><i class="fas fa-book"></i> Voir la documentation</a>
+					<a class="btn btn-danger btn-lg" href="https://github.com/maeldonn/motion-capture" data-key="voir-sur-github"><i class="fab fa-github"></i> Voir sur github</a>
+					<a class="btn btn-danger btn-lg" href="https://maeldonn.github.io/motion-capture/articles/gettingstarted.html" data-key="voir-doc"><i class="fas fa-book"></i> Voir la documentation</a>
 				</div>
 				
-				<h1 class="col-12 my-5 text-center">Capture de mouvements</h1>
+				<h1 class="col-12 my-5 text-center" data-key="projet-lab-mocap">Capture de mouvements</h1>
 				<div class="col-12 col-md-9 mb-2 text-start">
-					<p>Le CERV avait à sa disposition plusieurs tenues de Motion Capture, avec des technologies différentes. Nos encadrant nous ont alors proposé d'utiliser la tenue Perception Neuron,
+					<p data-key="projet-lab-mocap-p1">Le CERV avait à sa disposition plusieurs tenues de Motion Capture, avec des technologies différentes. Nos encadrant nous ont alors proposé d'utiliser la tenue Perception Neuron,
 						de la compagnie Noitom, qu'ils venaient tout juste de recevoir. C'est une tenue portable, adaptative et peu coûteuse, qui fonctionne avec des capteurs magnétiques. De plus, la
 						compagnie Noitom a développé des modules pour qu'elle puisse fonctionner en temps réel avec différents logiciels, que ce soit Unity, Unreal Engine ou des logiciels de modélisation
 						comme Blender ou Maya.</p>
-					<p>Nous avons donc pu relier la tenue avec une application, réalisée sur Unity, qui permettait la gestion de ces données.</p>
+					<p data-key="projet-lab-mocap-p2">Nous avons donc pu relier la tenue avec une application, réalisée sur Unity, qui permettait la gestion de ces données.</p>
 				</div>
 				<div class="col-12 col-md-3 text-center">
 					<img src="Images/MoCap/tenue.jpg" class="mb-1 img-fluid" alt="La tenue Perception Neuron">
-					<p class="text-center fst-italic fw-lighter">La tenue Perception Neuron</p>
+					<p class="text-center fst-italic fw-lighter" data-key="projet-lab-img2-desc">La tenue Perception Neuron</p>
 				</div>
 				
-				<h1 class="col-12 my-5 text-center">Réalité Virtuelle</h1>
+				<h1 class="col-12 my-5 text-center" data-key="projet-lab-rv">Réalité Virtuelle</h1>
 				<div class="col-12 col-md-4 text-center">
 					<img src="Images/MoCap/caisseVR.jpeg" class="mb-1 img-fluid" alt="La caisse contenant le matériel de VR">
-					<p class="text-center fst-italic fw-lighter">La caisse contenant le matériel de VR</p>
+					<p class="text-center fst-italic fw-lighter" data-key="projet-lab-img3-desc">La caisse contenant le matériel de VR</p>
 				</div>
 				<div class="col-12 col-md-8 mb-2 text-start">
-					<p>Encore une fois, le CERV nous a permis d'accéder à son matériel. Nous avons donc pu travailler avec un HTC Vive, dans une salle qui avait été mise à notre disposition.</p>
-					<p>Nous avons ensuite dû synchroniser le casque et la tenue sur Unity, ce qui nous donné une très bonne base pour travailler sur le coeur du projet.</p>
+					<p data-key="projet-lab-rv-p1">Encore une fois, le CERV nous a permis d'accéder à son matériel. Nous avons donc pu travailler avec un HTC Vive, dans une salle qui avait été mise à notre disposition.</p>
+					<p data-key="projet-lab-rv-p2">Nous avons ensuite dû synchroniser le casque et la tenue sur Unity, ce qui nous donné une très bonne base pour travailler sur le coeur du projet.</p>
 				</div>
 				
-				<h1 class="col-12 my-5 text-center">Reconnaissance de mouvements</h1>
+				<h1 class="col-12 my-5 text-center" data-key="projet-lab-reco-mvt">Reconnaissance de mouvements</h1>
 				<div class="col-12 col-md-4 text-center">
 					<img src="Images/MoCap/unity.jpg" class="mb-1 img-fluid" alt="Une vue de l'application sur Unity">
-					<p class="text-center fst-italic fw-lighter">Une vue de l'application sur Unity</p>
+					<p class="text-center fst-italic fw-lighter" data-key="projet-lab-img4-desc">Une vue de l'application sur Unity</p>
 				</div>
 				<div class="col-12 col-md-8 mb-2 text-start">
-					<p>La partie qui a demandé le plus de temps sur ce projet était la reconnaissance de mouvements. En effet, c'est un sujet de recherche qui nécessite encore beaucoup de travail.
+					<p data-key="projet-lab-reco-mvt-p1">La partie qui a demandé le plus de temps sur ce projet était la reconnaissance de mouvements. En effet, c'est un sujet de recherche qui nécessite encore beaucoup de travail.
 						Nous avons utilisé deux approches différentes: l'étude des variations, puis l'apprentissage machine.</p>
-					<p>La première approche se divise en deux étapes: dans un premier temps, de la reconnaissance de position, puis dans un second temps de la reconnaissance de mouvement dans un flux de positions.
+					<p data-key="projet-lab-reco-mvt-p2">La première approche se divise en deux étapes: dans un premier temps, de la reconnaissance de position, puis dans un second temps de la reconnaissance de mouvement dans un flux de positions.
 						Cette approche, plutot simpliste, ne donne pas de très bons résultats.</p>
-					<p>La seconde approche, l'apprentissage machine, a donné de bien meilleurs résultats, tout en offrant des temps de calculs plus courts.</p>
-					<p>Dans les deux cas, nous nous sommes appuyé sur des articles scientifiques, et avons intégré le tout dans une application d'entrainement au mouvement et de reconnaissance de mouvement.</p>
+					<p data-key="projet-lab-reco-mvt-p3">La seconde approche, l'apprentissage machine, a donné de bien meilleurs résultats, tout en offrant des temps de calculs plus courts.</p>
+					<p data-key="projet-lab-reco-mvt-p4">Dans les deux cas, nous nous sommes appuyé sur des articles scientifiques, et avons intégré le tout dans une application d'entrainement au mouvement et de reconnaissance de mouvement.</p>
 				</div>
 				
 				
@@ -141,38 +141,38 @@
 	<div id="Contact"></div>
 	
 	<!--Contact -->
-	<section class="container-fluid bg-dark text-light mt-5">
+		<section class="container-fluid bg-dark text-light mt-5">
 
-		<div class="row">
-			<div class="col-12 text-center my-5">
-				<h2 class="h1-responsive font-weight-bold">Contact</h2>
-			</div>
-			<div class="col-xl-6 col-md-12 text-center">
-				<i class="fas fa-user mt-4 fa-2x"></i>
-				<p class="mt-2 " >Oscar Trosseau</p>
+			<div class="row">
+				<div class="col-12 text-center my-5">
+					<h2 class="h1-responsive font-weight-bold" data-key="contact">Contact</h2>
+				</div>
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-user mt-4 fa-2x"></i>
+					<p class="mt-2 " >Oscar Trosseau</p>
+				</div>
+
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-phone mt-4 fa-2x"></i>
+					<p class="mt-2 " >+ 33 7 82 70 94 44</p>
+				</div>
+				
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-envelope mt-4 fa-2x"></i>
+					<p class="mt-2" >o.trosseau@laposte.net</p>
+				</div>
+				
+				<div class="col-xl-6 col-md-12 text-center mb-5">
+					<i class="fab fa-github mt-4 fa-2x"></i>
+					<p class="mt-2"><a href="https://github.com/OscarAFK" class="link-primary " target="_blank" data-key="mon-profil-github">Mon profil Github</a></p>
+				</div>
 			</div>
 
-			<div class="col-xl-6 col-md-12 text-center">
-				<i class="fas fa-phone mt-4 fa-2x"></i>
-				<p class="mt-2 " >+ 33 7 82 70 94 44</p>
-			</div>
-			
-			<div class="col-xl-6 col-md-12 text-center">
-				<i class="fas fa-envelope mt-4 fa-2x"></i>
-				<p class="mt-2" >o.trosseau@laposte.net</p>
-			</div>
-			
-			<div class="col-xl-6 col-md-12 text-center mb-5">
-				<i class="fab fa-github mt-4 fa-2x"></i>
-				<p class="mt-2"><a href="https://github.com/OscarAFK" class="link-primary " target="_blank">Mon profil Github</a></p>
-			</div>
-		</div>
-
-	</section>
+		</section>
 	
     <!-- Optional JavaScript -->
+	<script src="languageLoader.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="languageLoader.js"></script>
   </body>
 </html>

@@ -26,16 +26,16 @@
 		  <div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" href="accueil.html#A propos">A propos<span class="sr-only">(current)</span></a>
+				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos">A propos<span class="sr-only">(current)</span></a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="accueil.html#Jeux">Jeux</a>
+				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux">Jeux</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="accueil.html#Projets divers">Projets divers</a>
+				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers">Projets divers</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="accueil.html#Contact">Contact</a>
+				<a class="nav-link" data-key="contact" href="#Contact">Contact</a>
 			  </li>
 			</ul>
 		  </div>
@@ -43,7 +43,7 @@
 	</nav>
 	
 	<div id="Titre du jeu" class="container-fluid text-light pt-5">
-		<h1 class="display-1 text-center">Intelligence Artificielle</h1>
+		<h1 class="display-1 text-center" data-key="ia-titre">Intelligence Artificielle</h1>
 	</div>
 	
 	<!-- Description --->
@@ -52,87 +52,87 @@
 			<div class="row">
 
 				<div class="col-12 mb-5 text-start">
-					<p><strong>Le domaine de l'intelligence artificielle</strong> m'intéresse fortement, aussi ai-je suivi plusieurs cours traitants du sujet. Le premier se concentrait sur
+					<p data-key="ia-presentation-p1"><strong>Le domaine de l'intelligence artificielle</strong> m'intéresse fortement, aussi ai-je suivi plusieurs cours traitants du sujet. Le premier se concentrait sur
 						des problèmes d'intelligence artificielle généraux, et le second traitait de problèmes spécifiques aux jeux vidéo. Ces cours fonctionnaient avec un système de projet en groupe,
 						aussi cela m'a permis de mettre en oeuvre concrètement ce que j'y ai appris.</p>
-					<p>Certains de ces projets ont été réalisés en utilisant la fonction Collaborate d'Unity, ou le Colab de Visual Studio, aussi je ne peux pas partager le dépôt de travail.</p>
+					<p data-key="ia-presentation-p2">Certains de ces projets ont été réalisés en utilisant la fonction Collaborate d'Unity, ou le Colab de Visual Studio, aussi je ne peux pas partager le dépôt de travail.</p>
 				</div>
 				
-				<h1 class="col-12 my-5 text-center">Cours IA</h1>
+				<h1 class="col-12 my-5 text-center" data-key="ia-cours-ia">Cours IA</h1>
 				<div class="col-12 mb-2 text-center">
-					<p>Dans ce cours, réalisé à l'UQAC et encadré par C. Cousyn, trois petits projets ont permis de mettre en place les différentes notions abordées en cours. Une des notions centrales
+					<p data-key="ia-cours-ia-p1">Dans ce cours, réalisé à l'UQAC et encadré par C. Cousyn, trois petits projets ont permis de mettre en place les différentes notions abordées en cours. Une des notions centrales
 					était le concept d'agent, mais d'autres notions tel que les systèmes-experts ont été abordées.</p>
 				</div>
 				<div class="col-12 col-md-8 mb-2 text-start">
-					<h2 class="my-5 text-start">Agent aspirateur</h2>
-					<p>Le but de ce projet était de créer un agent aspirateur, qui se déplacerait automatiquement pour nettoyer la poussière. Cela se ferait dans un quadrillage, avec
+					<h2 class="my-5 text-start" data-key="ia-cours-ia-agent-aspi">Agent aspirateur</h2>
+					<p data-key="ia-cours-ia-p2">Le but de ce projet était de créer un agent aspirateur, qui se déplacerait automatiquement pour nettoyer la poussière. Cela se ferait dans un quadrillage, avec
 					chaque case représentant une pièce. Des poussières ou des bijoux pouvaient apparaitre de façon asynchrone sur le quadrillage, et l'agent devait réagir en conséquence: aspirer
 					la poussière, récupérer les bijoux. Il devait aussi le faire en minimisant ses déplacements.</p>
-					<p>Ce projet s'appuyait sur les notions d'agent de type "basé sur des buts", ainsi qu'un système de BDI, "Beliefs-Desires-Intentions". Enfin, il s'appuyait aussi sur des
+					<p data-key="ia-cours-ia-p3">Ce projet s'appuyait sur les notions d'agent de type "basé sur des buts", ainsi qu'un système de BDI, "Beliefs-Desires-Intentions". Enfin, il s'appuyait aussi sur des
 					algorithmes d'exploration non-informée.</p>
 				</div>
 				<div class="col-12 col-md-4 mt-5 text-center">
 					<img src="Images/IA/agentAspi.jpg" class="mb-1 img-fluid" alt="Une vue du projet agent aspirateur">
-					<p class="text-center fst-italic fw-lighter">Une vue du projet agent aspirateur</p>
+					<p class="text-center fst-italic fw-lighter" data-key="ia-img1-desc"data-key="ia-img1-desc">Une vue du projet agent aspirateur</p>
 				</div>
 				
 				<div class="col-12 col-md-4 mt-5 text-center">
 					<img src="Images/IA/sudoku.png" class="mb-1 img-a-50-pourcent" alt="Une vue du projet solveur de sudoku">
-					<p class="text-center fst-italic fw-lighter">Une vue du projet solveur de sudoku</p>
+					<p class="text-center fst-italic fw-lighter" data-key="ia-img2-desc">Une vue du projet solveur de sudoku</p>
 				</div>
 				<div class="col-12 col-md-8 mb-2 text-start">
-					<h2 class="my-5 text-start">Solveur de Sudoku</h2>
-					<p>Ce projet avait pour but de créer un algorithme capable de résoudre un sudoku. Ici on a utilisé ce que nous avions appris sur les problèmes à satisfaction de contrainte,
+					<h2 class="my-5 text-start" data-key="ia-cours-ia-sudoku">Solveur de Sudoku</h2>
+					<p data-key="ia-cours-ia-p4">Ce projet avait pour but de créer un algorithme capable de résoudre un sudoku. Ici on a utilisé ce que nous avions appris sur les problèmes à satisfaction de contrainte,
 						et par extension l'exploration informée.</p>
 				</div>
 				
 				<div class="col-12 col-md-8 mb-2 text-start">
-					<h2 class="my-5 text-start">Agent logique</h2>
-					<p>Dans ce projet, un agent logique se retrouve perdu dans une forêt, représentée par une grille de cases. Il doit s'en échapper, en évitant un certain nombre d'obstacles, tels que 
+					<h2 class="my-5 text-start" data-key="ia-cours-ia-agent-logique">Agent logique</h2>
+					<p data-key="ia-cours-ia-p5">Dans ce projet, un agent logique se retrouve perdu dans une forêt, représentée par une grille de cases. Il doit s'en échapper, en évitant un certain nombre d'obstacles, tels que 
 						des monstres ou des crevasse. Cet agent peut se déplacer et lancer des pierres pour se débarrasser des monstres.</p>
-					<p>La encore, on utilise la modélisation agent, mais avec un formalisme logique similaire à celui des systèmes experts. De plus, des notions probabilistes sont intégrées afin de 
+					<p data-key="ia-cours-ia-p6">La encore, on utilise la modélisation agent, mais avec un formalisme logique similaire à celui des systèmes experts. De plus, des notions probabilistes sont intégrées afin de 
 						calculer les risques de telle ou telle action.</p>
 				</div>
 				<div class="col-12 col-md-4 mt-5 text-center">
 					<img src="Images/IA/agentLogi.jpg" class="mb-1 img-fluid" alt="Une vue du projet agent logique">
-					<p class="text-center fst-italic fw-lighter">Une vue du projet agent logique</p>
+					<p class="text-center fst-italic fw-lighter" data-key="ia-img3-desc">Une vue du projet agent logique</p>
 				</div>
 				
 				<div class="col-12 mb-2 text-start">
-					<h2 class="my-5 text-start">Projet de session</h2>
-					<p>À la fin de la session, il nous était demandé de réaliser un projet, en s'appuyant la technologie d'IA de notre choix, pour répondre à une problématique.</p>
-					<p>Dans notre groupe, nous n'étions que des français, et nous nous sommes rendu compte que nous avions beaucoup de difficultés à reconnaitre les marques de voiture du
+					<h2 class="my-5 text-start" data-key="ia-cours-projet-session">Projet de session</h2>
+					<p data-key="ia-cours-ia-p7">À la fin de la session, il nous était demandé de réaliser un projet, en s'appuyant la technologie d'IA de notre choix, pour répondre à une problématique.</p>
+					<p data-key="ia-cours-ia-p8">Dans notre groupe, nous n'étions que des français, et nous nous sommes rendu compte que nous avions beaucoup de difficultés à reconnaitre les marques de voiture du
 					Québec. Nous avons donc décidé de mettre en place une application qui permettrait, à partir d'une photo, d'identifier la marque d'une voiture.</p>
-					<p>Pour cela, nous avons fait appel à des notions d'apprentissage machine, et avons mis en place un réseau de neurones convolutifs sur Google Collaboratory avec des
+					<p data-key="ia-cours-ia-p9">Pour cela, nous avons fait appel à des notions d'apprentissage machine, et avons mis en place un réseau de neurones convolutifs sur Google Collaboratory avec des
 						résultats concluants.</p>
 				</div>
 				
 				
 				
-				<h1 class="col-12 my-5 text-center">Cours d'IA pour le Jeu Vidéo</h1>
+				<h1 class="col-12 my-5 text-center" data-key="ia-cours-iaJV">Cours d'IA pour le Jeu Vidéo</h1>
 				<div class="col-12 mb-2 text-start">
-					<p>Ce cours, réalisé lui aussi à l'UQAC, encadré par A. Bouzane, aborde le sujet de l'intelligence artificielle en se concentrant sur son utilisation dans les jeux vidéo. Pour cela,
+					<p data-key="ia-cours-iaJV-p1">Ce cours, réalisé lui aussi à l'UQAC, encadré par A. Bouzane, aborde le sujet de l'intelligence artificielle en se concentrant sur son utilisation dans les jeux vidéo. Pour cela,
 						le livre "Programming Game AI by Example" de M. Buckland a servi de support.</p>
-					<p>Nous avons travaillé dans un premier temps à la mise en place de la machine à état fini d'agents PNJ, en utilisant un système de communication à haut niveau à base de messages.</p>
-					<p>Par la suite, nous avons travaillé sur la programmation de comportement émergent, avec par exemple des algorithmes de flocking.</p>
-					<p>Enfin, nous avons eu un projet de session qui demandait de réutiliser tout ce que nous avions appris en cours.</p>
+					<p data-key="ia-cours-iaJV-p2">Nous avons travaillé dans un premier temps à la mise en place de la machine à état fini d'agents PNJ, en utilisant un système de communication à haut niveau à base de messages.</p>
+					<p data-key="ia-cours-iaJV-p3">Par la suite, nous avons travaillé sur la programmation de comportement émergent, avec par exemple des algorithmes de flocking.</p>
+					<p data-key="ia-cours-iaJV-p4">Enfin, nous avons eu un projet de session qui demandait de réutiliser tout ce que nous avions appris en cours.</p>
 				</div>
 				<div class="col-12 col-md-8 mb-2 text-start">
-					<h2 class="my-5 text-start">Projet de session</h2>
-					<p>Nous avons du adapter le code source d'un jeu du livre de M. Buckland, le jeu "Raven". Il s'agit d'un jeu de type Quake ou Unreal Tournament, dans lequel des agents s'entretuent. Ceux-ci peuvent
+					<h2 class="my-5 text-start" data-key="ia-cours-projet-session">Projet de session</h2>
+					<p data-key="ia-cours-iaJV-p5">Nous avons du adapter le code source d'un jeu du livre de M. Buckland, le jeu "Raven". Il s'agit d'un jeu de type Quake ou Unreal Tournament, dans lequel des agents s'entretuent. Ceux-ci peuvent
 					choisir entre une variété d'armes, et peuvent récupérer des munitions et des trousses de soin.</p>
-					<p>Il nous était demandé de rajouter des règles pour le choix de certaines actions, d'implémenter un comportement flou, de rajouter un système d'équipes et d'ordres donnés par le joueur. Enfin,
+					<p data-key="ia-cours-iaJV-p6">Il nous était demandé de rajouter des règles pour le choix de certaines actions, d'implémenter un comportement flou, de rajouter un système d'équipes et d'ordres donnés par le joueur. Enfin,
 						nous devions aussi rajouter un agent apprenant, grace à de l'apprentissage machine.</p>
-					<p>Ce projet m'a permis d'apprendre énormément de choses sur l'intelligence artificielle, et son implémentation dans un jeu.</p>
+					<p data-key="ia-cours-iaJV-p7">Ce projet m'a permis d'apprendre énormément de choses sur l'intelligence artificielle, et son implémentation dans un jeu.</p>
 				</div>
 				<div class="col-12 col-md-4 mt-5 text-center">
 					<img src="Images/IA/raven.jpg" class="mb-1 img-fluid my-auto" alt="Une vue du projet de session">
-					<p class="text-center fst-italic fw-lighter">Une vue du projet de session</p>
+					<p class="text-center fst-italic fw-lighter" data-key="ia-img4-desc">Une vue du projet de session</p>
 				</div>
 				
-				<h1 class="col-12 my-5 text-center">Fiche technique</h1>
+				<h1 class="col-12 my-5 text-center" data-key="fiche-technique">Fiche technique</h1>
 				<div class="col-12 col-md-4 text-center">
-					<h2 class="h3"><i class="fas fa-tools"></i> Outils</h2>
+					<h2 class="h3" data-key="outils"><i class="fas fa-tools"></i> Outils</h2>
 					<p>Unity</p>
 					<p>C#</p>
 					<p>C++</p>
@@ -141,17 +141,17 @@
 					<p>Google Collaboratory</p>
 				</div>
 				<div class="col-12 col-md-4 text-center">
-					<h2 class="h3"><i class="fas fa-users"></i> Equipe</h2>
-					<p class="fst-italic">dans le premier cours:</p>
+					<h2 class="h3" data-key="equipe"><i class="fas fa-users"></i> Equipe</h2>
+					<p class="fst-italic" data-key="ia-ds-le-1er-cours">dans le premier cours:</p>
 					<p>Oscar Trosseau</p>
 					<p>Camille Benoit</p>
 					<p>Raphel Landuré</p>
-					<p class="fst-italic">puis dans le second cours:</p>
+					<p class="fst-italic" data-key="ia-ds-le-2nd-cours">puis dans le second cours:</p>
 					<p>Pierre Courtel--Sourdeau</p>
 					<p>Emmanuel Labarre</p>
 				</div>
 				<div class="col-12 col-md-4 text-center">
-					<h2 class="h3"><i class="far fa-calendar-alt"></i> Année</h2>
+					<h2 class="h3" data-key="annee"><i class="far fa-calendar-alt"></i> Année</h2>
 					<p>2021</p>
 				</div>
 			</div>
@@ -161,38 +161,38 @@
 	<div id="Contact"></div>
 	
 	<!--Contact -->
-	<section class="container-fluid bg-dark text-light mt-5">
+		<section class="container-fluid bg-dark text-light mt-5">
 
-		<div class="row">
-			<div class="col-12 text-center my-5">
-				<h2 class="h1-responsive font-weight-bold">Contact</h2>
-			</div>
-			<div class="col-xl-6 col-md-12 text-center">
-				<i class="fas fa-user mt-4 fa-2x"></i>
-				<p class="mt-2 " >Oscar Trosseau</p>
+			<div class="row">
+				<div class="col-12 text-center my-5">
+					<h2 class="h1-responsive font-weight-bold" data-key="contact">Contact</h2>
+				</div>
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-user mt-4 fa-2x"></i>
+					<p class="mt-2 " >Oscar Trosseau</p>
+				</div>
+
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-phone mt-4 fa-2x"></i>
+					<p class="mt-2 " >+ 33 7 82 70 94 44</p>
+				</div>
+				
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-envelope mt-4 fa-2x"></i>
+					<p class="mt-2" >o.trosseau@laposte.net</p>
+				</div>
+				
+				<div class="col-xl-6 col-md-12 text-center mb-5">
+					<i class="fab fa-github mt-4 fa-2x"></i>
+					<p class="mt-2"><a href="https://github.com/OscarAFK" class="link-primary " target="_blank" data-key="mon-profil-github">Mon profil Github</a></p>
+				</div>
 			</div>
 
-			<div class="col-xl-6 col-md-12 text-center">
-				<i class="fas fa-phone mt-4 fa-2x"></i>
-				<p class="mt-2 " >+ 33 7 82 70 94 44</p>
-			</div>
-			
-			<div class="col-xl-6 col-md-12 text-center">
-				<i class="fas fa-envelope mt-4 fa-2x"></i>
-				<p class="mt-2" >o.trosseau@laposte.net</p>
-			</div>
-			
-			<div class="col-xl-6 col-md-12 text-center mb-5">
-				<i class="fab fa-github mt-4 fa-2x"></i>
-				<p class="mt-2"><a href="https://github.com/OscarAFK" class="link-primary " target="_blank">Mon profil Github</a></p>
-			</div>
-		</div>
-
-	</section>
+		</section>
 	
     <!-- Optional JavaScript -->
+	<script src="languageLoader.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="languageLoader.js"></script>
   </body>
 </html>
