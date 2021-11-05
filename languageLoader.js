@@ -4,7 +4,7 @@ let langdata;
 
 //apply the language values to the content
 document.addEventListener('DOMContentLoaded', () => {
-	applyLangToContent();
+	//applyLangToContent();
 });
 
 async function loadLanguages() {
