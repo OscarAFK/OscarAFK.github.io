@@ -76,6 +76,13 @@ function setLanguageVariableAndReload(paramLang)
 	
 	applyLangToContent();
 	
+	let btn_cv = document.getElementById("btn_cv");
+	if(lang=="fr"){
+		btn_cv.setAttribute("href", "CV_Oscar_Trosseau.pdf");
+	}else {
+		btn_cv.setAttribute("href", "CV_Oscar_Trosseau_en.pdf");
+	}
+	
 	let btn_fr = document.getElementById("btn_fr");
 	let btn_en = document.getElementById("btn_en");
 	
