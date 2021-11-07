@@ -19,25 +19,30 @@
     
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-		  <a class="navbar-brand" href="#A propos">Oscar Trosseau</a>
+		  <a class="navbar-brand" href="accueil.html#A propos" id="btn_brand" onclick="addLanguageURL('btn_brand')">Oscar Trosseau</a>
+		  
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos">A propos<span class="sr-only">(current)</span></a>
+				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos" id="btn_apropos" onclick="addLanguageURL('btn_apropos')">A propos<span class="sr-only">(current)</span></a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux">Jeux</a>
+				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux" id="btn_jeux" onclick="addLanguageURL('btn_jeux')">Jeux</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers">Projets divers</a>
+				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers" id="btn_projets-divers" onclick="addLanguageURL('btn_projets-divers')">Projets divers</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="contact" href="#Contact">Contact</a>
+				<a class="nav-link" data-key="contact" href="#Contact" id="btn_contact" onclick="addLanguageURL('btn_contact')">Contact</a>
 			  </li>
 			</ul>
+		  </div>
+		  <div class="btn-group" role="group" aria-label="Selection de la langue">
+			  <button id="btn_fr" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('fr')">Français</button>
+			  <button id="btn_en" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('en')">English</button>
 		  </div>
 	  </div>
 	</nav>
@@ -101,14 +106,14 @@
 				
 				
 				<h1 class="col-12 my-5 text-center" data-key="taches-realisees">Taches réalisées</h1>
-				<div class="col-12 mb-2 text-center">
-					<p data-key="dalto-tR">Le projet ayant été développé en un temps assez court et dans une équipe de 2, j'ai pu travailler sur toutes les parties de l'application. </p>
+				<div class="col-12 mb-2 text-start">
+					<p data-key="dalto-tR-p1">Le projet ayant été développé en un temps assez court et dans une équipe de 2, j'ai pu travailler sur toutes les parties de l'application.</p>
+					<p data-key="dalto-tR-p2">Nous avons pu avancer rapidement sur la réalisation de l'application, avec les différentes vues. Le cœur du projet a été la manipulation d'image, et nous avons dû rechercher longtemps avant de trouver la bonne manière de transformer les couleurs des images. Nous avons finalement utilisé des matrices de transformation des couleurs, normalement destinées à des logiciels de retouche d'image comme Photoshop ou Gimp.</p>
 				</div>
 				
 				<h1 class="col-12 my-5 text-center" data-key="retour-dXP">Retour d'expérience</h1>
 				<div class="col-12 mb-5 text-start">
-					<p data-key="dalto-retour-dXp">Ce projet m'a permis de me familiariser avec Android Studio, et d'apprendre les bases du développement mobile. Qui plus est, cela a pu me sensibiliser aux problématiques
-						liées au daltonisme.</p>
+					<p data-key="dalto-retour-dXp">Ce projet m'a permis de me familiariser avec Android Studio, et d'apprendre les bases du développement mobile. Qui plus-est, cela a pu me sensibiliser aux problématiques liées au daltonisme. J'ai pris conscience de l'importance des choix de couleurs dans la construction d'un site web ou d'un jeu, et de la nécessité d'avoir de bons contrastes. Faire attention à ces éléments de design est une bonne pratique, qui n'est pas utile qu'aux daltoniens.</p>
 				</div>
 				
 				

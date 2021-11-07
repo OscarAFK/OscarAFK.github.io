@@ -16,28 +16,33 @@
   </head>
   
   <body>
-    
+	
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-		  <a class="navbar-brand" href="#A propos">Oscar Trosseau</a>
+		  <a class="navbar-brand" href="accueil.html#A propos" id="btn_brand" onclick="addLanguageURL('btn_brand')">Oscar Trosseau</a>
+		  
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos">A propos<span class="sr-only">(current)</span></a>
+				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos" id="btn_apropos" onclick="addLanguageURL('btn_apropos')">A propos<span class="sr-only">(current)</span></a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux">Jeux</a>
+				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux" id="btn_jeux" onclick="addLanguageURL('btn_jeux')">Jeux</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers">Projets divers</a>
+				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers" id="btn_projets-divers" onclick="addLanguageURL('btn_projets-divers')">Projets divers</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="contact" href="#Contact">Contact</a>
+				<a class="nav-link" data-key="contact" href="#Contact" id="btn_contact" onclick="addLanguageURL('btn_contact')">Contact</a>
 			  </li>
 			</ul>
+		  </div>
+		  <div class="btn-group" role="group" aria-label="Selection de la langue">
+			  <button id="btn_fr" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('fr')">Français</button>
+			  <button id="btn_en" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('en')">English</button>
 		  </div>
 	  </div>
 	</nav>
@@ -78,8 +83,10 @@
 				</div>
 				
 				<h1 class="col-12 my-5 text-center" data-key="taches-realisees">Taches réalisées</h1>
-				<div class="col-12 mb-2 text-center">
-					<p data-key="CTK-tR">Durant la game jam, j'ai eu pour tache de m'occuper de l'interface, d'animations ainsi que du système de score.</p>
+				<div class="col-12 mb-2 text-start">
+					<p data-key="CTK-tR-p1">Durant la game jam, j'ai eu pour tache de m'occuper de l'interface, d'animations ainsi que du système de score. L'une des grosses difficultés était de gérer l'agencement de l'interface pour qu'elle reste cohérente sur différentes résolutions d'écran. De plus, celle-ci devait s'animer suivant les actions qu'effectuait le joueur, et là encore, il fallait faire attention aux différentes résolutions.</p>
+					<p data-key="CTK-tR-p2">Ayant récupéré des ressources gratuites sur itchio, nous avons pu rapidement obtenir un visuel et des animations de qualité. Enfin, le système de score a dû être ajusté entre les deux types de gameplay afin que les scores soient équivalents.</p>
+					
 				</div>
 				<div class="col-12 text-center">
 					<img src="Images/CrushTheKing/jeu1.jpg" class="mb-1 img-a-50-pourcent" alt="Une vue du jeu">

@@ -19,25 +19,30 @@
     
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-		  <a class="navbar-brand" href="#A propos">Oscar Trosseau</a>
+		  <a class="navbar-brand" href="accueil.html#A propos" id="btn_brand" onclick="addLanguageURL('btn_brand')">Oscar Trosseau</a>
+		  
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" data-key="a-propos" href="#A propos">A propos<span class="sr-only">(current)</span></a>
+				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos" id="btn_apropos" onclick="addLanguageURL('btn_apropos')">A propos<span class="sr-only">(current)</span></a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="jeux" href="#Jeux">Jeux</a>
+				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux" id="btn_jeux" onclick="addLanguageURL('btn_jeux')">Jeux</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="projets-divers" href="#Projets divers">Projets divers</a>
+				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers" id="btn_projets-divers" onclick="addLanguageURL('btn_projets-divers')">Projets divers</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="contact" href="#Contact">Contact</a>
+				<a class="nav-link" data-key="contact" href="#Contact" id="btn_contact" onclick="addLanguageURL('btn_contact')">Contact</a>
 			  </li>
 			</ul>
+		  </div>
+		  <div class="btn-group" role="group" aria-label="Selection de la langue">
+			  <button id="btn_fr" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('fr')">Français</button>
+			  <button id="btn_en" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('en')">English</button>
 		  </div>
 	  </div>
 	</nav>
@@ -77,7 +82,7 @@
 					  <div class="carousel-caption px-5">
 						<h5 data-key="troubatechno-titre-carousel">Troubatechno: Sauveteur de la House</h5>
 						<p data-key="troubatechno-description-carousel" class="d-none d-md-block">Sauvez le monde dans ce jeu d'aventure musical, réalisé durant mon master en Informatique à l'Université du Québec à Chicoutimi.</p>
-						<a class="btn btn-danger" href="troubatechno.html" data-key="accedez-page">Accédez à la page</a>
+						<a class="btn btn-danger" href="troubatechno.html" data-key="accedez-page" id="btn_troubatechno" onclick="addLanguageURL('btn_troubatechno')">Accédez à la page</a>
 					  </div>
 					</div>
 					<div class="carousel-item">
@@ -85,7 +90,7 @@
 					  <div class="carousel-caption px-5">
 						<h5 data-key="CTK-titre-carousel">Crush the King</h5>
 						<p data-key="CTK-description-carousel" class="d-none d-md-block">Réalisé durant la Wonderjam d'hiver 2021, ce jeu d'arcade oppose deux joueurs dans un duel mêlant tetris et platformer.</p>
-						<a class="btn btn-danger" href="crushTheKing.html" data-key="accedez-page">Accédez à la page</a>
+						<a class="btn btn-danger" href="crushTheKing.html" data-key="accedez-page" id="btn_crushTheKing" onclick="addLanguageURL('btn_crushTheKing')">Accédez à la page</a>
 					  </div>
 					</div>
 					<div class="carousel-item">
@@ -93,7 +98,7 @@
 					  <div class="carousel-caption px-5">
 						<h5 data-key="space-escaper-titre-carousel">Space Escapers</h5>
 						<p data-key="space-escaper-description-carousel" class="d-none d-md-block">Utilisez les compétences complémentaires de deux personnages pour vous échapper d'un vaisseau spatial en perdition. Jeu réalisé durant la Global Game Jam 2020.</p>
-						<a class="btn btn-danger" href="spaceEscapers.html" data-key="accedez-page">Accédez à la page</a>
+						<a class="btn btn-danger" href="spaceEscapers.html" data-key="accedez-page" id="btn_spaceEscapers" onclick="addLanguageURL('btn_spaceEscapers')">Accédez à la page</a>
 					  </div>
 					</div>
 				  </div>
@@ -129,7 +134,7 @@
 				  <div class="carousel-caption px-5">
 					<h5 data-key="daltonizator-titre-carousel">Daltonizator</h5>
 					<p data-key="daltonizator-description-carousel" class="d-none d-md-block">Réalisée dans le cadre du cours de CAI à l'Ecole Nationale d'Ingénieurs de Brest, Daltonizator est une application android ayant pour but de simuler la vision d'un daltonien.</p>
-					<a class="btn btn-danger" href="daltonizator.html" data-key="accedez-page">Accédez à la page</a>
+					<a class="btn btn-danger" href="daltonizator.html" data-key="accedez-page" id="btn_daltonizator" onclick="addLanguageURL('btn_daltonizator')">Accédez à la page</a>
 				  </div>
 				</div>
 				<div class="carousel-item">
@@ -137,7 +142,7 @@
 				  <div class="carousel-caption px-5">
 					<h5 data-key="projet-labo-titre-carousel">Projet en laboratoire</h5>
 					<p data-key="projet-labo-description-carousel" class="d-none d-md-block">Un projet ayant été réalisé sous la supervision d'un enseignant-chercheur durant 4 mois au Centre Européen de la Réalité Virtuelle à Brest. Il m'a permis de travailler sur de la capture de mouvements, de l'animation, de la réalité virtuelle, de la reconnaissance de mouvement et de l'intelligence artificielle.</p>
-					<a class="btn btn-danger" href="mocap.html" data-key="accedez-page">Accédez à la page</a>
+					<a class="btn btn-danger" href="mocap.html" data-key="accedez-page" id="btn_mocap" onclick="addLanguageURL('btn_mocap')">Accédez à la page</a>
 				  </div>
 				</div>
 				<div class="carousel-item">
@@ -145,7 +150,7 @@
 				  <div class="carousel-caption px-5">
 					<h5 data-key="ia-titre-carousel">Intelligence artificielle</h5>
 					<p data-key="ia-description-carousel" class="d-none d-md-block">Divers projets réalisés à l'Université du Québec à Chicoutimi, portants sur l'IA.</p>
-					<a class="btn btn-danger" href="IntelligenceArtificielle.html" data-key="accedez-page">Accédez à la page</a>
+					<a class="btn btn-danger" href="IntelligenceArtificielle.html" data-key="accedez-page" id="btn_IntelligenceArtificielle" onclick="addLanguageURL('btn_IntelligenceArtificielle')">Accédez à la page</a>
 				  </div>
 				</div>
 			  </div>

@@ -19,25 +19,30 @@
     
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-		  <a class="navbar-brand" href="#A propos">Oscar Trosseau</a>
+		  <a class="navbar-brand" href="accueil.html#A propos" id="btn_brand" onclick="addLanguageURL('btn_brand')">Oscar Trosseau</a>
+		  
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos">A propos<span class="sr-only">(current)</span></a>
+				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos" id="btn_apropos" onclick="addLanguageURL('btn_apropos')">A propos<span class="sr-only">(current)</span></a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux">Jeux</a>
+				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux" id="btn_jeux" onclick="addLanguageURL('btn_jeux')">Jeux</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers">Projets divers</a>
+				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers" id="btn_projets-divers" onclick="addLanguageURL('btn_projets-divers')">Projets divers</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" data-key="contact" href="#Contact">Contact</a>
+				<a class="nav-link" data-key="contact" href="#Contact" id="btn_contact" onclick="addLanguageURL('btn_contact')">Contact</a>
 			  </li>
 			</ul>
+		  </div>
+		  <div class="btn-group" role="group" aria-label="Selection de la langue">
+			  <button id="btn_fr" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('fr')">Français</button>
+			  <button id="btn_en" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('en')">English</button>
 		  </div>
 	  </div>
 	</nav>
@@ -55,7 +60,6 @@
 					<p data-key="ia-presentation-p1"><strong>Le domaine de l'intelligence artificielle</strong> m'intéresse fortement, aussi ai-je suivi plusieurs cours traitants du sujet. Le premier se concentrait sur
 						des problèmes d'intelligence artificielle généraux, et le second traitait de problèmes spécifiques aux jeux vidéo. Ces cours fonctionnaient avec un système de projet en groupe,
 						aussi cela m'a permis de mettre en oeuvre concrètement ce que j'y ai appris.</p>
-					<p data-key="ia-presentation-p2">Certains de ces projets ont été réalisés en utilisant la fonction Collaborate d'Unity, ou le Colab de Visual Studio, aussi je ne peux pas partager le dépôt de travail.</p>
 				</div>
 				
 				<h1 class="col-12 my-5 text-center" data-key="ia-cours-ia">Cours IA</h1>
