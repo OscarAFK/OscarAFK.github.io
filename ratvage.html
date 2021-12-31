@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	
+	<script src="https://kit.fontawesome.com/d08f02e953.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	
+    <title>Portfolio Oscar Trosseau</title>
+	
+  </head>
+  
+  <body>
+    
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+		  <a class="navbar-brand" href="accueil.html#A propos" id="btn_brand" onclick="addLanguageURL('btn_brand')">Oscar Trosseau</a>
+		  
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos" id="btn_apropos" onclick="addLanguageURL('btn_apropos')">A propos<span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux" id="btn_jeux" onclick="addLanguageURL('btn_jeux')">Jeux</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers" id="btn_projets-divers" onclick="addLanguageURL('btn_projets-divers')">Projets divers</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-key="contact" href="#Contact" id="btn_contact" onclick="addLanguageURL('btn_contact')">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		  <div class="btn-group" role="group" aria-label="Selection de la langue">
+			  <button id="btn_fr" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('fr')">Français</button>
+			  <button id="btn_en" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('en')">English</button>
+		  </div>
+	  </div>
+	</nav>
+	
+	<div id="Titre du jeu" class="container-fluid text-light pt-5">
+		<h1 class="display-1 text-center" data-key="ratvage-titre">Ratvage</h1>
+	</div>
+	
+	<!-- Description --->
+	<div id="Description" class="container bg-dark text-light pt-5">
+		<div id="Description2" class="container mt-2">
+			<div class="row">
+				
+				<div class="col-12 mb-5 text-center">
+					<a class="btn btn-danger btn-lg" href="https://oscarafk.itch.io/ratvage" data-key="voir-sur-itchio"><i class="fab fa-itch-io"></i> Voir sur itch.io</a>
+				</div>
+				
+				
+				<div class="col-3 col-md-1 text-center my-auto">
+						<img src="Images/Ratvage/rat.png" class="mb-1 img-fluid" alt="Le rat leader">
+						<p class="text-center fst-italic fw-lighter" data-key="ratvage-img1-desc">Le rat</p>
+				</div>
+				<p class="lead col-6 col-md-10 " data-key="ratvage-presentation-p1">Dans Ratvage, vous incarnez un rat désabusé par la vie sur le vieux continent, qui cherche à trouver sa place dans le nouveau monde. Il sera <strong>roi</strong>, rien de moins! </p>
+				<div class="col-3 col-md-1 text-center my-auto">
+					<img src="Images/Ratvage/fromage.png" class="mb-1 img-fluid" alt="Du fromage">
+					<p class="text-center fst-italic fw-lighter" data-key="ratvage-img2-desc">Du fromage</p>
+				</div>
+				
+				<div class="col-12 col-md-3 text-center">
+					<img src="Images/Ratvage/pirate.png" class="mb-1 img-fluid" alt="Un pirate">
+					<p class="text-center fst-italic fw-lighter" data-key="ratvage-img3-desc">Un pirate</p>
+				</div>
+				
+				<div class="col-12 col-md-9 row">
+					<p class="col-12" data-key="ratvage-presentation-p2">Pour aller au bout de ses ambitions, il pourra compter sur sa fidèle horde de rats. Celle-ci grossira à chaque fromage qu'il mangera. Et il en aura besoin, car de féroces pirates habitent son futur royaume, et seul le nombre pourra les vaincre.</p>
+					
+					<div class="col-12 col-md-9">
+						<p data-key="ratvage-presentation-p4">Si vous l'aidez à braver tous les dangers, alors vous aurez la chance de récupérer le Graal des fromages, et ainsi asseoir votre contrôle sur la région.</p>
+						<p data-key="ratvage-presentation-p3">Attention, car il n'a pas un contrôle absolu sur la horde; tous les rats aiment la nourriture, mais ils sont encore plus attirés par les ordures.</p>
+					</div>
+					
+					<div class="col-12 col-md-3 text-center">
+							<img src="Images/Ratvage/ordure.png" class="mb-1 img-fluid" alt="Des ordures">
+							<p class="text-center fst-italic fw-lighter" data-key="ratvage-img4-desc">Des ordures</p>
+					</div>
+					
+				</div>
+				
+				<p data-key="ratvage-presentation-p5">Ce jeu a été réalisé dans le cadre du cours 8INF960 "Principes de conception et de développement de jeux vidéo" de l'UQAC.</p>
+				
+				
+				
+				
+				<h1 class="col-12 my-5 text-center" data-key="taches-realisees">Taches réalisées</h1>
+				<div class="col-12 mb-5 text-start">
+					<p data-key="ratvage-tR-p1">Dans ce projet, j'étais le seul à avoir des expériences de développement de jeu vidéo, que ce soit dans des gamejam ou avec les cours de l'UQAC. Cela m'a permis d'avoir un rôle de conseil et de supervision plus important que dans mes projets précédents. J'ai entre autres été scrum-master.</p>
+					<p data-key="ratvage-tR-p2">Autrement, j'ai pu me confronter à des aspects du développement de jeu vidéo que je n'avais pas abordé: j'ai fait du level design, sur 3 niveaux différents. J'ai pu aussi faire de l'IA, en m'occupant du comportement de la horde de rats: j'ai implémenté un <a href="https://github.com/SebLague/Boids" target="_blank">système de flocking</a> développé par Seb Lague, que j'ai modifié suivant les besoins du projet.</p>
+					<p data-key="ratvage-tR-p3">Je me suis aussi occupé des déchets, et de la façon dont ils interagissent avec la horde. J'ai implémenté un menu de choix de niveau, que j'ai voulu rendre très dynamique et fun à regarder. Enfin, j'ai passé énormément de temps à faire du polish et des bugfixes.</p>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="Images/Ratvage/ecran_titre.jpg" class="mb-1 img-fluid" alt="Vue d'une niveau">
+					<p class="text-center fst-italic fw-lighter" data-key="ratvage-img5-desc">La vue d'un des niveaux que j'ai développé</p>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="Images/Ratvage/ratvage_2.jpg" class="mb-1 img-fluid" alt="La horde qui suit le rat principal">
+					<p class="text-center fst-italic fw-lighter" data-key="ratvage-img6-desc">La horde qui suit le rat principal</p>
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="Images/Ratvage/ratvage_1.jpg" class="mb-1 img-fluid" alt="Le menu de choix de niveau">
+					<p class="text-center fst-italic fw-lighter" data-key="ratvage-img7-desc">Le menu de choix de niveau</p>
+				</div>
+				
+				
+				<h1 class="col-12 my-5 text-center" data-key="retour-dXP">Retour d'expérience</h1>
+				<div class="col-12 mb-5 text-start">
+					<p data-key="ratvage-retour-dXP-p1">J’ai énormément appris durant ce projet, et j’ai le sentiment d’avoir évolué depuis mon premier projet en Laboratoire Jeu Vidéo à l'UQAC. J’ai pu aborder de nouveaux domaines, tels que le level design, l’IA, de l’animation.</p>
+					<p data-key="ratvage-retour-dXP-p2">Travailler avec mes camarades a été un plaisir, la communication était bonne et nous avancions de manière constante. J’en suis d’autant plus heureux que c’était la première expérience que mes camarades avaient avec ce genre de projet. Je suis très content du résultat final, même si le jeu est court, il ne donne pas l'impression d’avoir été bâclé, grâce notamment aux feedbacks et au polish.</p>
+				</div>
+				
+				<h1 class="col-12 my-5 text-center" data-key="fiche-technique">Fiche technique</h1>
+				<div class="col-12 col-md-4 text-center">
+					<h2 class="h3" data-key="outils"><i class="fas fa-tools"></i> Outils</h2>
+					<p>Unity 2020</p>
+					<p>C#</p>
+					<p>Gimp</p>
+				</div>
+				<div class="col-12 col-md-4 text-center">
+					<h2 class="h3" data-key="equipe"><i class="fas fa-users"></i> Equipe</h2>
+					<p>Camille Benoit</p>
+					<p>Julien Boulvert</p>
+					<p>Nomanina Ravaloson</p>
+					<p>Oscar Trosseau</p>
+				</div>
+				<div class="col-12 col-md-4 text-center">
+					<h2 class="h3" data-key="annee"><i class="far fa-calendar-alt"></i> Année</h2>
+					<p>2021</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="Contact"></div>
+	
+	<!--Contact -->
+		<section class="container-fluid bg-dark text-light mt-5">
+
+			<div class="row">
+				<div class="col-12 text-center my-5">
+					<h2 class="h1-responsive font-weight-bold" data-key="contact">Contact</h2>
+				</div>
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-user mt-4 fa-2x"></i>
+					<p class="mt-2 " >Oscar Trosseau</p>
+				</div>
+
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-phone mt-4 fa-2x"></i>
+					<p class="mt-2 " >+ 33 7 82 70 94 44</p>
+				</div>
+				
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-envelope mt-4 fa-2x"></i>
+					<p class="mt-2" >o.trosseau@laposte.net</p>
+				</div>
+				
+				<div class="col-xl-6 col-md-12 text-center mb-5">
+					<i class="fab fa-github mt-4 fa-2x"></i>
+					<p class="mt-2"><a href="https://github.com/OscarAFK" class="link-primary " target="_blank" data-key="mon-profil-github">Mon profil Github</a></p>
+				</div>
+			</div>
+
+		</section>
+	
+    <!-- Optional JavaScript -->
+	<script src="languageLoader.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

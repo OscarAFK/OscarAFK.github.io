@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	
+	<script src="https://kit.fontawesome.com/d08f02e953.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	
+    <title>Portfolio Oscar Trosseau</title>
+	
+  </head>
+  
+  <body>
+    
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+		  <a class="navbar-brand" href="accueil.html#A propos" id="btn_brand" onclick="addLanguageURL('btn_brand')">Oscar Trosseau</a>
+		  
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" data-key="a-propos" href="accueil.html#A propos" id="btn_apropos" onclick="addLanguageURL('btn_apropos')">A propos<span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-key="jeux" href="accueil.html#Jeux" id="btn_jeux" onclick="addLanguageURL('btn_jeux')">Jeux</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-key="projets-divers" href="accueil.html#Projets divers" id="btn_projets-divers" onclick="addLanguageURL('btn_projets-divers')">Projets divers</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" data-key="contact" href="#Contact" id="btn_contact" onclick="addLanguageURL('btn_contact')">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		  <div class="btn-group" role="group" aria-label="Selection de la langue">
+			  <button id="btn_fr" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('fr')">Français</button>
+			  <button id="btn_en" type="button" class="btn btn-outline-danger" onclick="setLanguageVariableAndReload('en')">English</button>
+		  </div>
+	  </div>
+	</nav>
+	
+	<div id="Titre du jeu" class="container-fluid text-light pt-5">
+		<h1 class="display-1 text-center" data-key="koompsC-titre">Koomp’s Ca$hette</h1>
+	</div>
+	
+	<!-- Description --->
+	<div id="Description" class="container bg-dark text-light pt-5">
+		<div id="Description2" class="container mt-2">
+			<div class="row">
+				
+				<div class="col-2 text-center my-auto">
+					<img src="Images/KoompsCashette/koompsCashette_6.jpg" class="mb-1 img-fluid" alt="Le Cosht">
+					<p class="text-center fst-italic fw-lighter" data-key="koompsC-img1-desc">Le Cosht</p>
+				</div>
+				<div class="col-8 text-center my-auto">
+					<p class="lead col-12" data-key="koompsC-presentation-p1">Koomp’s Ca$hette est un jeu de cache-cache avec un design cartoon où plusieurs joueurs vont se cacher d’un dernier joueur, tout en cherchant des pièces disséminées dans le niveau. L’objectif est d’être le joueur ayant amassé le plus de pièces à la fin du temps donné.</p>
+					<p class="col-12" data-key="koompsC-presentation-p2">Les joueurs jouant les Koomps (c-à-d les proies) peuvent se déplacer, se cacher, et récolter des pièces. Le joueur jouant le Cosht (c-à-d le chasseur) peut se déplacer, et envoyer un  rayon laser sur les proies. Cela leur retire alors des pièces, et les téléportent loin de lui.</p>
+					<p class="col-12" data-key="koompsC-presentation-p3">Ce projet à été réalisé dans le cadre du cours "Programmation réseau dans les jeux vidéos" à l'UQAC.</p>
+				</div>
+				
+				<div class="col-2 text-center my-auto">
+					<img src="Images/KoompsCashette/koompsCashette_7.jpg" class="mb-1 img-fluid" alt="Un Koomps">
+					<p class="text-center fst-italic fw-lighter" data-key="koompsC-img2-desc">Un Koomps</p>
+				</div>
+				
+				<div class="col-12 mb-5 text-center">
+					<a class="btn btn-danger btn-lg" href="https://oscarafk.itch.io/koomps-cashette" data-key="voir-sur-itchio"><i class="fab fa-itch-io"></i> Voir sur itch.io</a>
+					<a class="btn btn-danger btn-lg" href="https://github.com/oscarafk/HideAndSeek" data-key="voir-sur-github"><i class="fab fa-github"></i> Voir sur github</a>
+				</div>
+				
+				<div class="row mt-5">
+					<div class="col-md-4 text-center my-auto">
+						<img src="Images/KoompsCashette/koompsCashette_1.JPG" class="mb-1 img-fluid" alt="Un Koomps se fait poursuivre">
+						<p class="text-center fst-italic fw-lighter" data-key="koompsC-img3-desc">Un Koomps se fait poursuivre</p>
+					</div>
+					
+					<div class="col-md-4 text-center my-auto">
+						<img src="Images/KoompsCashette/koompsCashette_5.JPG" class="mb-1 img-fluid" alt="La carte du jeu">
+						<p class="text-center fst-italic fw-lighter" data-key="koompsC-img4-desc">La carte du jeu</p>
+					</div>
+					
+					<div class="col-md-4 text-center my-auto">
+						<img src="Images/KoompsCashette/koompsCashette_3.JPG" class="mb-1 img-fluid" alt="Une pièce à récupérer">
+						<p class="text-center fst-italic fw-lighter" data-key="koompsC-img5-desc">Une pièce à récupérer</p>
+					</div>
+				</div>
+				
+				<h1 class="col-12 my-5 text-center" data-key="taches-realisees">Taches réalisées</h1>
+				<div class="col-12 mb-5 text-start">
+					<p data-key="koompsC-tR-p1">Dans ce projet, nous avons tout d'abord cherché à avoir un premier prototype simple du jeu, sans mise en réseau. Je me suis occupé des pièces, et de leur apparition sur la carte. Mes camarades ont eu rajouté les Koomps et l'interface.</p>
+					<p data-key="koompsC-tR-p2">Dans un second temps, je me suis occupé de mettre en réseau ce prototype, pendant que mes camarades continuaient le développement du prototype. J'ai aussi rajouté un menu basique, afin de pouvoir se connecter à différentes adresses. Mes camarades ayant avancé sur leurs parties, j'ai pu mettre les mettre en réseau aussi, notamment le Cosht.</p>
+					<p data-key="koompsC-tR-p3">Nous avions alors un prototype presque achevé, j'ai donc fini de réaliser la boucle de jeu (l'apparition à un point aléatoire des joueurs, le compte à rebours, l'écran de victoire final...). Sur le peu de temps qu'il restait, je me suis occupé de fixer des bug et de faire du polish.</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="Images/KoompsCashette/koompsCashette_2.JPG" class="mb-1 img-fluid" alt="Le point de vue du Cosht">
+					<p class="text-center fst-italic fw-lighter" data-key="koompsC-img6-desc">Le point de vue du Cosht</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="Images/KoompsCashette/koompsCashette_4.JPG" class="mb-1 img-fluid" alt="L'écran de fin de partie">
+					<p class="text-center fst-italic fw-lighter" data-key="koompsC-img7-desc">L'écran de fin de partie</p>
+				</div>
+				
+				
+				<h1 class="col-12 my-5 text-center" data-key="retour-dXP">Retour d'expérience</h1>
+				<div class="col-12 text-start">
+					<p data-key="koompsC-retour-dXP-p1">J'avais déjà abordé le réseau dans mes études, mais de manière assez superficielle. Le cours de "Programmation réseau dans les jeux vidéos" m'a permis d'approfondir et de mettre en pratique ces connaissances. Dans un premier temps de manière générale (nous devions réaliser des bibliothèques permettant de faire du réseau, avec Socket/Serialisation/Replication), puis plus précisement avec la solution offerte par Unity.</p>
+					<p data-key="koompsC-retour-dXP-p2">Et malgré la taille modérée de ce projet, j'ai beaucoup appris sur les problématiques du réseau dans les jeux vidéos. De plus, en jouant avec mes camarade, j'ai réalisé qu'il était plus facile de rendre les jeux multijoueur amusant que les jeux en solo. En effet, même avec son gameplay très simple le jeu est fun.</p>
+				</div>
+				
+				<h1 class="col-12 my-5 text-center" data-key="fiche-technique">Fiche technique</h1>
+				<div class="col-12 col-md-4 text-center">
+					<h2 class="h3" data-key="outils"><i class="fas fa-tools"></i> Outils</h2>
+					<p>Unity 2020</p>
+					<p>C#</p>
+				</div>
+				<div class="col-12 col-md-4 text-center">
+					<h2 class="h3" data-key="equipe"><i class="fas fa-users"></i> Equipe</h2>
+					<p>Florent Bogacz</p>
+					<p>Hippolyte Gossoin</p>
+					<p>Oscar Trosseau</p>
+				</div>
+				<div class="col-12 col-md-4 text-center">
+					<h2 class="h3" data-key="annee"><i class="far fa-calendar-alt"></i> Année</h2>
+					<p>2021</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="Contact"></div>
+	
+	<!--Contact -->
+		<section class="container-fluid bg-dark text-light mt-5">
+
+			<div class="row">
+				<div class="col-12 text-center my-5">
+					<h2 class="h1-responsive font-weight-bold" data-key="contact">Contact</h2>
+				</div>
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-user mt-4 fa-2x"></i>
+					<p class="mt-2 " >Oscar Trosseau</p>
+				</div>
+
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-phone mt-4 fa-2x"></i>
+					<p class="mt-2 " >+ 33 7 82 70 94 44</p>
+				</div>
+				
+				<div class="col-xl-6 col-md-12 text-center">
+					<i class="fas fa-envelope mt-4 fa-2x"></i>
+					<p class="mt-2" >o.trosseau@laposte.net</p>
+				</div>
+				
+				<div class="col-xl-6 col-md-12 text-center mb-5">
+					<i class="fab fa-github mt-4 fa-2x"></i>
+					<p class="mt-2"><a href="https://github.com/OscarAFK" class="link-primary " target="_blank" data-key="mon-profil-github">Mon profil Github</a></p>
+				</div>
+			</div>
+
+		</section>
+	
+    <!-- Optional JavaScript -->
+	<script src="languageLoader.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
